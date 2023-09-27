@@ -1,0 +1,7 @@
+﻿::deep .low {
+    background-color: pink;
+}
+
+::deep .high {
+    background-color: lightgreen;
+}
