@@ -1,0 +1,2 @@
+# KB11799_ConditionalRowStyling_BlazorWasmApp1
+IgbGrid セルの値に応じて行全体の色を変える
