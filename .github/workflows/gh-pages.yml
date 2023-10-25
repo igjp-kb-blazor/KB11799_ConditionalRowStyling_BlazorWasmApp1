@@ -30,11 +30,11 @@ jobs:
 
       # Add the "Publish SPA for GitHub Pages" package
       - name: Add the "Publish SPA for GitHub Pages" package
-        run: dotnet add package PublishSPAforGitHubPages.Build --version 2.1.0
+        run: dotnet add KB11799_BlazorWasmApp1/KB11799_BlazorWasmApp1.csproj package PublishSPAforGitHubPages.Build --version 2.1.0
 
       # Publish the site
       - name: Publish
-        run: dotnet publish KB11799_BlazorWasmApp1\KB11799_BlazorWasmApp1.csproj -c Release -o publish -p GHPages=true
+        run: dotnet publish KB11799_BlazorWasmApp1/KB11799_BlazorWasmApp1.csproj -c Release -o publish -p GHPages=true
 
       # Clean up package source
       - name: Clean up package source
