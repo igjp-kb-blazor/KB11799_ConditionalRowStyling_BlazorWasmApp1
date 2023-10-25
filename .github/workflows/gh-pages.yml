@@ -34,7 +34,7 @@ jobs:
 
       # Publish the site
       - name: Publish
-        run: dotnet publish KB11799_BlazorWasmApp1/KB11799_BlazorWasmApp1.csproj -c Release -o publish -p GHPages=true
+        run: dotnet publish KB11799_BlazorWasmApp1\KB11799_BlazorWasmApp1.csproj -c Release -o publish -p GHPages=true
 
       # Clean up package source
       - name: Clean up package source
