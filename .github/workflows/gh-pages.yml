@@ -22,10 +22,10 @@ jobs:
 
       # Setup NuGet package source
       - name: Setup NuGet package source
-        run: dotnet nuget add source https://nuget.pkg.github.com/igjp-sample/index.json
-          --name igjp-sample
-          --username ${{ secrets.USER }}
-          --password ${{ secrets.PAT }}
+        run: dotnet nuget add source "https://packages.infragistics.com/nuget/licensed" 
+          -n Infragistics 
+          -u api 
+          -p ${{ secrets.ACCESSTOKEN_FOR_NUGET }}
           --store-password-in-clear-text
 
       # Add the "Publish SPA for GitHub Pages" package
@@ -38,7 +38,7 @@ jobs:
 
       # Clean up package source
       - name: Clean up package source
-        run: dotnet nuget remove source igjp-sample
+        run: dotnet nuget remove source Infragistics
 
       # Deploy the site
       - name: Deploy
