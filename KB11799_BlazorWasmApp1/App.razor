@@ -1,8 +1,11 @@
 ﻿@inject ProductsDataService ProductDS
 
 <div style="margin: 1em;">
-    <IgbGrid Data="Products" PrimaryKey="@nameof(Product.ProductID)"
-             AutoGenerate="false" Height="500px" DisplayDensity="DisplayDensity.Compact"
+    <IgbGrid Data="Products"
+             PrimaryKey="@nameof(Product.ProductID)"
+             AutoGenerate="false" Height="500px"
+             DisplayDensity="DisplayDensity.Compact"
+             RowSelection="GridSelectionMode.Single"
              RowClassesScript="RowClassesHandler">
         <IgbColumn Field="@nameof(Product.ProductID)" Header="製品ID" />
         <IgbColumn Field="@nameof(Product.ProductName)" Header="製品名" />
