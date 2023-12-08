@@ -1,0 +1,35 @@
+/* /App.razor.rz.scp.css */
+[b-lf8cb6c424] .low {
+    background-color: pink;
+}
+
+[b-lf8cb6c424] .high {
+    background-color: lightgreen;
+}
+
+/* マウスホバーしている場合のスタイル定義 */
+[b-lf8cb6c424] igx-grid-row.low:hover {
+    background-color: hotpink;
+}
+
+[b-lf8cb6c424] igx-grid-row.high:hover {
+    background-color: limegreen;
+}
+
+/* 行選択されている場合のスタイル定義 */
+[b-lf8cb6c424] igx-grid-row[aria-selected="true"].low {
+    background-color: hotpink;
+}
+
+[b-lf8cb6c424] igx-grid-row[aria-selected="true"].high {
+    background-color: limegreen;
+}
+
+/* 行選択されていて、かつ、マウスホバーしている場合のスタイル定義 */
+[b-lf8cb6c424] igx-grid-row[aria-selected="true"].low:hover {
+    background-color: deeppink;
+}
+
+[b-lf8cb6c424] igx-grid-row[aria-selected="true"].high:hover {
+    background-color: mediumseagreen;
+}
